@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    margin: 0%;
+    background-color: #242240;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    width: 600px;
+    height: 600px;
+    background-color: #F2F8FD;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cube-container {
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 10px;
+}
+
+.cube {
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 10px;
+    flex: 70px;
+    width: 70px;
+    height: 70px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.dot {
+    display: block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.first-face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.second-face .dot:nth-of-type(2) {
+    align-self: flex-end;
+}
+
+.third-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.third-face .dot:nth-of-type(1) {
+    align-self: flex-end;
+}
+
+.third-face .dot:nth-of-type(2) {
+    align-self: center;
+}
+
+
+.fourth-face,
+.sixth-face,
+.fifth-face {
+    display: flex;
+    justify-content: space-between;
+}
+
+.fourth-face .column,
+.sixth-face .column,
+.fifth-face .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fifth-face .column:nth-of-type(2) {
+    justify-content: center;
+}
+
+.re-roll-button {
+    background-color: #0260E8;
+    border: none;
+    color: white;
+    padding: 10px 60px;
+    font-size: 25px;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.re-roll-button:active {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 12px;
+}
+
+.title-container {
+    text-align: center;
+}
+
+.title-container>h1 {
+    font-size: 3em;
+    font-weight: 500;
+    color: #01142F;
+    margin-bottom: 0;
+
+}
+
+.title-container p {
+    margin-top: 10px;
+    font-size: 1.3em;
+    padding: 0 40px;
+    color: #2E3F7F;
+}
+
+.title-container h2 {
+    color: #2E3F7F;
+}
+
+.highscore {
+    margin-top: 0;
+    color: #2E3F7F;
+}
